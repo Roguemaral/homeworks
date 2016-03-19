@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+}
+/*APP根元素*/
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+/*整体页面*/
+#index_view {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+/*页面最顶端*/
+#index_view .ui-new-toolbar {
+    background-image: url(http://m.baidu.com/static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+.ui-new-toolbar {
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+/*左端*/
+.ui-new-toolbar-l {
+    top: 0;
+    left: 0;
+}
+.ui-new-toolbar-l, .ui-new-toolbar-r {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+.btn-baidu {
+    background-position: center 4px;
+}
+.ui-new-toolbar-l .ui-new-toolbar-btn {
+    float: left;
+}
+
+.ui-new-toolbar-btn {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+}
+.btn-search, .btn-product, .btn-modelopen, .btn-subscribe, .btn-baidu, .btn-back, .btn-home, .btn-dld, .btn-config, .btn-bigger, .btn-smaller, .btn-userhome, .ui-toolbar-func .btn-slide, .ui-footer-app-download span, .page-view-list-item-inner div:nth-child(2) span:nth-child(3), .page-view-share span, .ui-gotop span {
+    border: 0;
+    background-image: url(http://m.baidu.com/static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+.btn-userhome {
+    background-position: center -463px;
+    margin-left: 10px;
+}
+/*右端*/
+.ui-new-toolbar-r {
+    top: 0;
+    right: 0;
+}
+.ui-new-toolbar-r .ui-new-toolbar-btn {
+    float: left;
+}
+.btn-search {
+    background-position: center -162px;
+    margin-right: 10px;
+}
+.btn-subscribe {
+    background-position: center -107px;
+}
+
+
+/*////////////////////////*/
+
+.header {
+    width: 100%;
+    height: 40px;
+    border-top:1px solid #5dabf0;
+    background-color: #3190fa;
+    border-bottom: 1px solid #79b7fc;
+}
+
+.col-xs-2 {
+    height: 25px;
+    border-right: 1px solid #ffffff;
+    margin-top: 7.5px;
+    font-size:14px;
+}
+
+.header-2-style-only {
+    border: none;
+}
+
+/*导航按钮的样式*/
+
+.nav input {
+    background-color: inherit;
+    border: none;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.news {
+    height: 90px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.news-title {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    display: inline-block;
+}
+
+.news-p1 {
+    font-size: 12px;
+    margin-left: 95px;
+    display: inline-block;
+    position: relative;
+    top: -55px;
+    left: 5px;
+    color: #bdbdbd;
+}
+
+.news-date {
+    margin-left: 95px;
+    color: #cccaca;
+    display: inline-block;
+    position: relative;
+    top: -60px;
+    left: 5px;
+    font-size: 12px;
+}
+
+.img {
+    width: 90px;
+    height: 70px;
+    background-color: #a7a7a7;  
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+
+.borderstyle{
+    border-bottom: 1px solid #ffffff;
+}
+.indexinfo{
+    display: none;
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    margin: 200px auto;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+.imgstyle{
+    width: 90px;
+    height: 70px;
+    /*background-color: #a7a7a7;  */
+    display: inline-block;
+    /*margin-top: 10px;*/
+    /*margin-left: -10px;*/
+} 
+
+
+/*页面最低端*/
+#index_view_footer{
+   margin-top: 30px;
+
+}
+
+.ui-footer {
+    height: 44px;
+    overflow: hidden;
+    background-color: #239bf0;
+    font-size: 13px;
+    line-height: 22px;
+}
+/*意见反馈*/
+.ui-footer .item-wrapper:first-child {
+    margin-left: 0;
+    border-left: 0;
+}
+.ui-footer .item-wrapper {
+    float: left;
+    width: 33.3%;
+    height: 21px;
+    overflow: hidden;
+    margin-left: -1px;
+    margin-top: 12px;
+    text-align: center;
+    border-left: 1px solid #4fadf0;
+    color: #fff;
+}
+.ui-footer .feedback {
+    background-position: 0 3px;
+}
+.ui-footer .feedback, .ui-footer .app-recommend, .ui-footer .app-download {
+    background-image: url(http://m.baidu.com/static/news/webapp/webappandroid/img/bg-footer_7e7ec6c.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px 300px;
+}
+.ui-footer .item {
+    display: inline-block;
+    height: 100%;
+    padding-left: 25px;
+}
+/*应用推荐*/
+.ui-footer .app-recommend {
+    background-position: 0 -31px;
+}
+/*客户端*/
+.ui-footer .app-download {
+    background-position: 0 -64px;
+}
+
+
+/*传入新闻*/
+.container{
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.container h5{
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 60px 4px 0;
+    float: right;
+
+}
+.col-xs-4 img{
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #F4F7F9;
+    position: relative;
+}
+    
+.col-xs-4 span{
+    font-size: 12px;
+    line-height: 22px;
+    color: #b8bac0;
+    font-weight: 400;
+    margin:0 0 0 0;
+
+}
+.col-xs-8{
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+    

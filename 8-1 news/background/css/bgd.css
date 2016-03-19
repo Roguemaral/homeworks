@@ -1,0 +1,70 @@
+body {
+    background: url(../img/0.jpg);
+}
+.container {
+    height: 860px;
+    width: 850px;
+    background-color: rgba(254, 255, 255, 0.29);
+}
+#head {
+    width: 850px;
+    height: 9%;
+    margin: 0 0 0 -14px;
+    background: -webkit-gradient(linear, center top, center bottom, from(#97F895), to(#46CF22));
+}
+h2 {
+    float: left;
+    width: 70px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+h4 {
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    color: #8E56C2;
+    margin-top: 19px;
+    margin-left: 24px;
+}
+.caption {
+    float: right;
+    width: 95px;
+    color: #FFFFFF;
+    margin-top: 18px;
+}
+
+.body{
+	margin: 10px;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;  /*去掉圆点*/
+}
+.body ul{
+    height: 30px;
+    width: 100%;
+}
+
+
+li{
+	float: left;
+    cursor:pointer;
+	background-color: #5bc0de;
+	color: #ffffff;
+	padding: 5px;
+	margin-right: 10px;
+	border: 1px solid #ffffff;
+}
+.tabin{
+	background-color: #BF24FF;
+	border: 1px solid #FFF930;
+}
+#contentsecond{
+    margin: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,66 @@
+<<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>box</title>
+        <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .xiezi {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .xiehe {
+        	box-shadow:5px 5px 5px rgba(0,0,0,.6);
+            margin: 100px;
+            padding: 10px;
+            /*缝隙*/
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 5px solid red;
+            /*边框*/
+        }
+        .xiezi1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .xiehe1 {
+        	box-shadow:5px 5px 5px rgba(0,0,0,.6);
+            margin: 50px;
+            margin-left: 100px;
+            padding: 10px;
+            /*缝隙*/
+            width: 130px;
+            height: 130px;
+            background-color: blue;
+            border: 5px solid red;
+            /*边框*/
+            box-sizing:border-box;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="xiehe">
+            <div class="xiezi">
+                鞋子
+            </div>
+        </div>
+        <hr/>
+        <div class="xiehe1">
+            <div class="xiezi1">
+                怪异的鞋子
+            </div>
+        </div>
+    </body>
+
+    </html>

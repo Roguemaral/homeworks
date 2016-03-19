@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  width: 480px;
+  margin: 0px auto;
+}
+.content .stop-1 {
+  height: 300px;
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+.content .stop-1 .line {
+  height: 30%;
+  background-color: #FAFF29;
+}
+.content .stop-1 .line .direction {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+.content .stop-1 .line .direction p {
+  color: #FF0F00;
+}
+.content .stop-1 .line .direction .digital {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.content .stop-1 .line .instructions {
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  float: left;
+}
+.content .stop-1 .line .instructions p {
+  width: 20px;
+  line-height: 20px;
+}
+.content .stop-1 .line .arrange {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+}
+.content .stop-1 .station {
+  height: 50%;
+  background-color: #68A4FF;
+}
+.content .stop-1 .station ul {
+  color: #FFF;
+  font-family: "楷体";
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  margin: 0;
+}
+.content .stop-1 .station ul li {
+  list-style-type: none;
+  width: 20px;
+  line-height: 24px;
+  padding: 5px 0px 0px 18px;
+  line-height: 135%;
+}
+.content .stop-1 .station ul .three {
+  line-height: 266%;
+  margin-top: -12px;
+}
+.content .stop-1 .station ul .four {
+  line-height: 181%;
+  margin-top: -5px;
+}
+.content .stop-1 .beacon {
+  height: 20%;
+  background-color: #68A4FF;
+}
+.content .stop-1 .beacon .string {
+  width: 200px;
+  height: 5px;
+  margin: 30px 0px 0px 126px;
+  padding: 0px;
+  background-color: #FF0F00;
+  overflow: hidden;
+  position: absolute;
+}
+.content .stop-1 .beacon .arrow {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #68A4FF #68A4FF #68A4FF #FF0F00;
+  position: absolute;
+  margin: 23px 324px;
+  float: right;
+}

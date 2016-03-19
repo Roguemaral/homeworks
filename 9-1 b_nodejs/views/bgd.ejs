@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>新闻后台登录首页</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/bgd.css">
+    <script type="text/javascript" src="./javascripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./javascripts/bgd.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--系统标题-->
+        <div id="head">
+            <h2>WEB</h2>
+            <h4>权限管理</h4>
+            <div class="caption">
+                系统设置
+            </div>
+        </div>
+        <!--系统中心区域-->
+        <div class="after-content">
+            <div class="navbar-news">
+                <ul>
+                    <li id="all">全部新闻</li>
+                    <li id="addnews">发布新闻</li>
+                </ul>
+            </div>
+            <div>
+                <!--全部新闻-->
+                <div class="all-news">
+                    <!--表格-->
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <thead id="thead">
+                            <tr>
+                                <th>ID</th>
+                                <th>标题</th>
+                                <th>类型</th>
+                                <th>内容</th>
+                                <th>时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="dele-info"><span>删除成功</span></div>
+                </div>
+                <!--发布新闻-->
+                <div class="add-news">
+                    <form id="add" enctype='multipart/form-data'>
+                        <p class="add-news-p">新闻标题</p>
+                        <input id="addnewsheader" type="text" required="required" class="news-header" name="addtitle" min="0" max="15" />
+                        <span id="addinfo" class="addinfo">新闻标题!重要信息都不填写？</span>
+
+                        <p>
+                             <!--上传图片-->
+                        <label class="fileheader">上传图片</label>
+                        <input type="file" name="files" class="file" />
+                        </p>
+
+                        <p class="add-news-p">新闻类型</p>
+                        <select id="addtype" name="addtype">
+                            <option value="">未选择</option>
+                            <option value="recom">推荐</option>
+                            <option value="baijia">百家</option>
+                            <option value="local">本地</option>
+                            <option value="img">图片</option>
+                            <option value="fun">娱乐</option>
+                            <option value="society">社会</option>
+                        </select>
+                        <span id="addinfo-2" class="addinfo">你还未进行任何的选择</span>
+
+                        <p class="add-news-p">新闻内容</p>
+                        <textarea id="addtext" required="required" class="news-text" name="addtext" min="1" max="22"></textarea><span id="addinfo-3" class="addinfo">新闻内容!重要信息都不填写？</span>
+
+                        <p class="add-news-p">发布时间</p>
+                        <input id="senddate" type="date" name="adddate" />
+                        <p>
+                            <!--重置-->
+                            <input type="reset" value="重置新闻" class="news-reset" />
+                            <!--提交-->
+                            <input id="addbtn" type="submit" value="提交新闻" class="news-submit" />
+                        </p>
+                        
+                    </form>
+                </div>
+                <!--更改新闻-->
+                <div class="update-news">
+                    <form id="update">
+                        <p class="update-news-p">新闻ID</p>
+                        <input id="update-id" type="text" class="update-id" readonly="readonly" required="required" name="updateid">
+
+                        <p class="update-news-p">新闻标题</p>
+                        <input id="update-title" type="text" required="required" class="update-header" name="updatetitle" placeholder="请准确核实新闻标题,它将是你更新新闻的唯一依据" />
+
+                        <p class="update-news-p">新闻类型</p>
+                        <select id="update-type" name="updatetype">
+                            <option value="">未选择</option>
+                            <option value="推荐">推荐</option>
+                            <option value="百家">百家</option>
+                            <option value="本地">本地</option>
+                            <option value="图片">图片</option>
+                            <option value="娱乐">娱乐</option>
+                            <option value="社会">社会</option>
+                        </select>
+                        <p class="update-news-p">发布时间</p>
+                        <input id="update-date" type="date" name="updatedate" />
+                        <!--此处新闻发布时间-->
+
+                        <p class="update-news-p">新闻内容</p>
+                        <textarea id="update-content" required="required" class="update-text" name="updatetext"></textarea>
+                        
+                        <input id="updatereset" type="submit" value="取消更改" class="update-reset" />
+                        <input id="updatebtn" type="submit" value="更改新闻" class="update-submit" />
+                    </form>
+                    <div class="updata-info">更新成功</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
